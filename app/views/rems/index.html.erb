@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Rems</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date Cut</th>
+      <th>Description</th>
+      <th>Material Thick</th>
+      <th>Alloy</th>
+      <th>Square Inches</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rems.each do |rem| %>
+      <tr>
+        <td><%= rem.date %></td>
+        <td><%= rem.desc %></td>
+        <td><%= rem.matThick %></td>
+        <td><%= rem.alloy %></td>
+        <td><%= rem.sqin %></td>
+        <td><%= link_to 'Show', rem %></td>
+        <td><%= link_to 'Edit', edit_rem_path(rem) %></td>
+        <td><%= link_to 'Destroy', rem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rem', new_rem_path %>

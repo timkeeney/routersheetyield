@@ -2,26 +2,26 @@
 
 <p>
   <strong>Date:</strong>
-  <%= @sheet.date %>
+  <%= @sheet.date.strftime("%m/%d/%Y") %>
 </p>
 
 <p>
-  <strong>Sheeth:</strong>
+  <strong>Sheet Height:</strong>
   <%= @sheet.sheetH %>
 </p>
 
 <p>
-  <strong>Sheetw:</strong>
+  <strong>Sheet Width:</strong>
   <%= @sheet.sheetW %>
 </p>
 
 <p>
-  <strong>Matthick:</strong>
+  <strong>Material Thick:</strong>
   <%= @sheet.matThick %>
 </p>
 
 <p>
-  <strong>Desc:</strong>
+  <strong>Description:</strong>
   <%= @sheet.desc %>
 </p>
 
@@ -31,7 +31,12 @@
 </p>
 
 <p>
-  <strong>Ponum:</strong>
+  <strong>Scrap:</strong>
+  <%= @sheet.scrap %>
+</p>
+
+<p>
+  <strong>PO Num:</strong>
   <%= @sheet.poNum %>
 </p>
 

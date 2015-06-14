@@ -69,6 +69,6 @@ class SheetsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def sheet_params
-      params.require(:sheet).permit(:date, :sheetH, :sheetW, :matThick, :desc, :alloy, :poNum)
+      params.require(:sheet).permit(:date, :sheetH, :sheetW, :matThick, :desc, :alloy, :poNum, :scrap)
     end
 end

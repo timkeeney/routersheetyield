@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2015-06-13 22:16:29
+  desc: MyString
+  matThick: 9.99
+  alloy: 1
+  sqin: 9.99
+
+two:
+  date: 2015-06-13 22:16:29
+  desc: MyString
+  matThick: 9.99
+  alloy: 1
+  sqin: 9.99

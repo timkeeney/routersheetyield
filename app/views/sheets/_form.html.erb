@@ -12,23 +12,23 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :date %><br>
-    <%= f.datetime_select :date %>
+    <%= f.label "Date Cut" %><br>
+    <%= f.datetime_select :date, :order => [:day, :month, :year], :discard_hour => true, :discard_minute => true %>
   </div>
   <div class="field">
-    <%= f.label :sheetH %><br>
+    <%= f.label "Sheet Height" %><br>
     <%= f.text_field :sheetH %>
   </div>
   <div class="field">
-    <%= f.label :sheetW %><br>
+    <%= f.label "Sheet Width" %><br>
     <%= f.text_field :sheetW %>
   </div>
   <div class="field">
-    <%= f.label :matThick %><br>
+    <%= f.label "Material Thickness" %><br>
     <%= f.text_field :matThick %>
   </div>
   <div class="field">
-    <%= f.label :desc %><br>
+    <%= f.label "Description" %><br>
     <%= f.text_field :desc %>
   </div>
   <div class="field">
@@ -36,7 +36,11 @@
     <%= f.number_field :alloy %>
   </div>
   <div class="field">
-    <%= f.label :poNum %><br>
+    <%= f.label "% Scrap" %><br>
+    <%= f.text_field :scrap %>
+  </div>
+  <div class="field">
+    <%= f.label "PO Number" %><br>
     <%= f.text_field :poNum %>
   </div>
   <div class="actions">

@@ -1,0 +1,37 @@
+<%= form_for(@rem) do |f| %>
+  <% if @rem.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rem.errors.count, "error") %> prohibited this rem from being saved:</h2>
+
+      <ul>
+      <% @rem.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :desc %><br>
+    <%= f.text_field :desc %>
+  </div>
+  <div class="field">
+    <%= f.label :matThick %><br>
+    <%= f.text_field :matThick %>
+  </div>
+  <div class="field">
+    <%= f.label :alloy %><br>
+    <%= f.number_field :alloy %>
+  </div>
+  <div class="field">
+    <%= f.label :sqin %><br>
+    <%= f.text_field :sqin %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

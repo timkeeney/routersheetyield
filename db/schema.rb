@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150614044802) do
+ActiveRecord::Schema.define(version: 20150614053443) do
+
+  create_table "rems", force: :cascade do |t|
+    t.datetime "date"
+    t.string   "desc"
+    t.decimal  "matThick"
+    t.integer  "alloy"
+    t.decimal  "sqin"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "sheets", force: :cascade do |t|
     t.datetime "date"
@@ -23,6 +33,7 @@ ActiveRecord::Schema.define(version: 20150614044802) do
     t.string   "poNum"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.decimal  "scrap"
   end
 
 end
