@@ -1,0 +1,45 @@
+<%= form_for(@sheet) do |f| %>
+  <% if @sheet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sheet.errors.count, "error") %> prohibited this sheet from being saved:</h2>
+
+      <ul>
+      <% @sheet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :sheetH %><br>
+    <%= f.text_field :sheetH %>
+  </div>
+  <div class="field">
+    <%= f.label :sheetW %><br>
+    <%= f.text_field :sheetW %>
+  </div>
+  <div class="field">
+    <%= f.label :matThick %><br>
+    <%= f.text_field :matThick %>
+  </div>
+  <div class="field">
+    <%= f.label :desc %><br>
+    <%= f.text_field :desc %>
+  </div>
+  <div class="field">
+    <%= f.label :alloy %><br>
+    <%= f.number_field :alloy %>
+  </div>
+  <div class="field">
+    <%= f.label :poNum %><br>
+    <%= f.text_field :poNum %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

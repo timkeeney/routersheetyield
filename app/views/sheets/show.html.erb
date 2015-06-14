@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @sheet.date %>
+</p>
+
+<p>
+  <strong>Sheeth:</strong>
+  <%= @sheet.sheetH %>
+</p>
+
+<p>
+  <strong>Sheetw:</strong>
+  <%= @sheet.sheetW %>
+</p>
+
+<p>
+  <strong>Matthick:</strong>
+  <%= @sheet.matThick %>
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @sheet.desc %>
+</p>
+
+<p>
+  <strong>Alloy:</strong>
+  <%= @sheet.alloy %>
+</p>
+
+<p>
+  <strong>Ponum:</strong>
+  <%= @sheet.poNum %>
+</p>
+
+<%= link_to 'Edit', edit_sheet_path(@sheet) %> |
+<%= link_to 'Back', sheets_path %>

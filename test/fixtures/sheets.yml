@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2015-06-13 21:48:02
+  sheetH: 9.99
+  sheetW: 9.99
+  matThick: 9.99
+  desc: MyString
+  alloy: 1
+  poNum: MyString
+
+two:
+  date: 2015-06-13 21:48:02
+  sheetH: 9.99
+  sheetW: 9.99
+  matThick: 9.99
+  desc: MyString
+  alloy: 1
+  poNum: MyString
