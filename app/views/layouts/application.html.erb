@@ -8,12 +8,16 @@
 </head>
 <body>
 
-<%= link_to "Home", root_path %>
-<%= link_to "Cut Sheets", sheets_path %>
-<%= link_to "Cut REMs", rems_path %>
-<%= link_to "Evaluation Sheet", home_evaluation_path %>
+<div class="container">
+	<ul class="nav nav-tabs">
+		<li><%= link_to "Home", root_path %></li>
+		<li><%= link_to "Cut Sheets", sheets_path %></li>
+		<li><%= link_to "Cut REMs", rems_path %></li>
+		<li><%= link_to "Evaluation Sheet", home_evaluation_path %></li>
+	</ul>
 
-<%= yield %>
+	<%= yield %>
 
+</div>
 </body>
 </html>
