@@ -1,8 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Rems</h1>
-
-<table>
+<h1>Cut Rems</h1>
+<%= link_to 'New Rem', new_rem_path, :class => "btn btn-primary" %>
+<br>
+<br>
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>Date Cut</th>
@@ -17,19 +19,17 @@
   <tbody>
     <% @rems.each do |rem| %>
       <tr>
-        <td><%= rem.date %></td>
+        <td><%= rem.date.strftime("%m/%d/%Y") %></td>
         <td><%= rem.desc %></td>
         <td><%= rem.matThick %></td>
         <td><%= rem.alloy %></td>
         <td><%= rem.sqin %></td>
-        <td><%= link_to 'Show', rem %></td>
-        <td><%= link_to 'Edit', edit_rem_path(rem) %></td>
-        <td><%= link_to 'Destroy', rem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', rem, :class => "btn btn-default" %></td>
+        <td><%= link_to 'Edit', edit_rem_path(rem), :class => "btn btn-success" %></td>
+        <td><%= link_to 'Destroy', rem, method: :delete, :class => "btn btn-danger", data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
 
-<%= link_to 'New Rem', new_rem_path %>
