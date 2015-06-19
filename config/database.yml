@@ -27,4 +27,4 @@ production:
   <<: *default
   database: routersheetyield_production
   username: deploy
-  password: <%= ENV['ROUTERSHEETYIELD_DATABASE_PASSWORD'] %>
+  password: ami.1512015

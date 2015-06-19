@@ -6,10 +6,6 @@ require 'capistrano/deploy'
 
 require 'capistrano/rails'
 
-load 'deploy'
-load 'deploy/assets'
-load 'config/deploy'
-
 # Include tasks from other gems included in your Gemfile
 #
 # For documentation on these, see for example:
