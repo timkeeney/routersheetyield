@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_id: 1
+  type: 
+  length: 1
+  StartDate: 2015-06-20
+  CompleteDate: 2015-06-20
+
+two:
+  customer_id: 1
+  type: 
+  length: 1
+  StartDate: 2015-06-20
+  CompleteDate: 2015-06-20

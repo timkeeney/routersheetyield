@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Customers</h1>
-
+<%= link_to 'New Customer', new_customer_path, :class => "btn btn-primary" %>
 <table class="table table-bordered">
   <thead>
     <tr>
@@ -27,7 +27,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Customer', new_customer_path %>

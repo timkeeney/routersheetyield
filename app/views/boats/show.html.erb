@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @boat.customer_id %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @boat.HullType %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @boat.length %>
+</p>
+
+<p>
+  <strong>Startdate:</strong>
+  <%= @boat.StartDate %>
+</p>
+
+<p>
+  <strong>Completedate:</strong>
+  <%= @boat.CompleteDate %>
+</p>
+
+<%= link_to 'Edit', edit_boat_path(@boat) %> |
+<%= link_to 'Back', boats_path %>
