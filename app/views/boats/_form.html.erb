@@ -13,7 +13,15 @@
 
   <div class="field">
     <%= f.label :customer_id %><br>
-    <%= f.number_field :customer_id %>
+    <%= f.collection_select(:customer_id, Customer.all, :id, :full_name) %>
+  </div>
+  <div class="field">
+    <%= f.label :Active %><br>
+    <%= f.select(:Active, [["No", 0], ["Yes", 1]]) %>
+  </div>
+  <div class="field">
+    <%= f.label :BoatName %><br>
+    <%= f.text_field :BoatName %>
   </div>
   <div class="field">
     <%= f.label :HullType %><br>
@@ -24,13 +32,18 @@
     <%= f.number_field :length %>
   </div>
   <div class="field">
-    <%= f.label :StartDate %><br>
+    <%= f.label :Hin %><br>
+    <%= f.text_field :Hin %>
+  </div>
+  <div class="field">
+    <%= f.label "Start Date" %><br>
     <%= f.date_select :StartDate %>
   </div>
   <div class="field">
-    <%= f.label :CompleteDate %><br>
+    <%= f.label "Completion Date" %><br>
     <%= f.date_select :CompleteDate %>
   </div>
+  <br>
   <div class="actions">
     <%= f.submit %>
   </div>

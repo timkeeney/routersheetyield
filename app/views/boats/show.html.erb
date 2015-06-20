@@ -6,6 +6,16 @@
 </p>
 
 <p>
+  <strong>Active?:</strong>
+  <%= @boat.Active ? 'Yes' : 'No' %>
+</p>
+
+<p>
+  <strong>Boat Name:</strong>
+  <%= @boat.BoatName %>
+</p>
+
+<p>
   <strong>Type:</strong>
   <%= @boat.HullType %>
 </p>
@@ -13,6 +23,11 @@
 <p>
   <strong>Length:</strong>
   <%= @boat.length %>
+</p>
+
+<p>
+  <strong>HIN:</strong>
+  <%= @boat.Hin %>
 </p>
 
 <p>
