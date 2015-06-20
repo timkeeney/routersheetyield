@@ -7,14 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
 <div class="container">
-	<ul class="nav nav-tabs">
-		<li><%= link_to "Home", root_path %></li>
-		<li><%= link_to "Cut Sheets", sheets_path %></li>
-		<li><%= link_to "Cut REMs", rems_path %></li>
-	</ul>
-
+	<%= render 'layouts/header' %>
+	
 	<%= yield %>
 
 </div>
