@@ -1,18 +1,18 @@
-<div class="nav navbar-default navbar-fixed-top" role="navigation">
+<div class="nav navbar-default navbar-fixed-top">
 	<div class="navbar-header">
 	<a class="navbar-brand" href="#">Armstrong Database</a>
-	<ul class="nav navbar-nav navbar-right">
+	<ul class="nav navbar-nav">
 		<li><%= link_to "Home", root_path, :class => "active", :role => "presentation" %></li>
 		<li class="dropdown">
 	      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Boats/Customers <span class="caret"></span></a>
-	      <ul class="dropdown-menu pull-right">
+	      <ul class="dropdown-menu">
 	        <li><%= link_to "Customers", customers_path %></li>
 			<li><%= link_to "Boats", boats_path %></li>
 	      </ul>
 	    </li>
 		<li class="dropdown">
 	      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Router <span class="caret"></span></a>
-	      <ul class="dropdown-menu pull-right">
+	      <ul class="dropdown-menu">
 	        <li><%= link_to "Cut Sheets", sheets_path %></li>
 			<li><%= link_to "Cut REMs", rems_path %></li>
 	      </ul>

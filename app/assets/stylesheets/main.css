@@ -7,11 +7,3 @@ body {
 	margin-top: 20px;
 }
 
-.dropdown-menu {
-	float:right;
-	left: -95%;
-}
-
-.btn-default:visited {
-	color:grey;
-}

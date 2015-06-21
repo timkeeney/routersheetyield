@@ -26,5 +26,6 @@ test:
 production:
   <<: *default
   database: routersheetyield_production
+  host: localhost
   username: deploy
-  password: ami.1512015
+  password: <%= ENV['ARMSTRONGMARINE_DATABASE_PASSWORD'] %>
