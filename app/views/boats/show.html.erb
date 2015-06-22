@@ -7,17 +7,17 @@
 
 <p>
   <strong>Active?:</strong>
-  <%= @boat.Active ? 'Yes' : 'No' %>
+  <%= @boat.active ? 'Yes' : 'No' %>
 </p>
 
 <p>
   <strong>Boat Name:</strong>
-  <%= @boat.BoatName %>
+  <%= @boat.boat_name %>
 </p>
 
 <p>
   <strong>Type:</strong>
-  <%= @boat.HullType %>
+  <%= @boat.hull_type %>
 </p>
 
 <p>
@@ -27,17 +27,17 @@
 
 <p>
   <strong>HIN:</strong>
-  <%= @boat.Hin %>
+  <%= @boat.hin %>
 </p>
 
 <p>
   <strong>Startdate:</strong>
-  <%= @boat.StartDate %>
+  <%= @boat.start_date %>
 </p>
 
 <p>
-  <strong>Completedate:</strong>
-  <%= @boat.CompleteDate %>
+  <strong>Completion Date:</strong>
+  <%= @boat.completion_date %>
 </p>
 
 <%= link_to 'Edit', edit_boat_path(@boat) %> |

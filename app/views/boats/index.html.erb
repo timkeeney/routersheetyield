@@ -5,15 +5,15 @@
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th>Customer</th>
-      <th>Active?</th>
-      <th>Boat Name</th>
-      <th>Hull Type</th>
-      <th>Length</th>
-      <th>HIN</th>
-      <th>Start Date</th>
-      <th>Completion Date</th>
-      <th>Days Remaining</th>
+      <th><%= link_to "Customer", :sort => "customer_id" %></th>
+      <th><%= link_to "Active?", :sort => "active" %></th>
+      <th><%= link_to "Boat Name", :sort => "boat_name" %></th>
+      <th><%= link_to "Hull Type", :sort => "hull_type" %></th>
+      <th><%= link_to "Length", :sort => "length" %></th>
+      <th><%= link_to "HIN", :sort => "hin" %></th>
+      <th><%= link_to "Start Date", :sort => "start_date" %></th>
+      <th><%= link_to "Completion Date", :sort => "completion_date" %></th>
+      <th><%= link_to "Days Remaining", :sort => "DaysRemaining" %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,14 +22,14 @@
     <% @boats.each do |boat| %>
       <tr>
         <td><%= boat.customer.fname %> <%= boat.customer.lname %></td>
-        <td><%= boat.Active ? 'Yes' : 'No' %></td>
-        <td><%= boat.BoatName %></td>
-        <td><%= boat.HullType %></td>
+        <td><%= boat.active ? 'Yes' : 'No' %></td>
+        <td><%= boat.boat_name %></td>
+        <td><%= boat.hull_type %></td>
         <td><%= boat.length %></td>
-        <td><%= boat.Hin %></td>
-        <td><%= boat.StartDate %></td>
-        <td><%= boat.CompleteDate %></td>
-        <td><%= (boat.CompleteDate - Date.today).to_i %></td>
+        <td><%= boat.hin %></td>
+        <td><%= boat.start_date %></td>
+        <td><%= boat.completion_date %></td>
+        <td></td>
         <td><%= link_to 'Show', boat, :class => "btn btn-default" %></td>
         <td><%= link_to 'Edit', edit_boat_path(boat), :class => "btn btn-success" %></td>
         <td><%= link_to 'Destroy', boat, method: :delete, :class => "btn btn-danger", data: { confirm: 'Are you sure?' } %></td>

@@ -16,32 +16,32 @@
     <%= f.collection_select(:customer_id, Customer.all, :id, :full_name) %>
   </div>
   <div class="field">
-    <%= f.label :Active %><br>
-    <%= f.select(:Active, [["No", 0], ["Yes", 1]]) %>
+    <%= f.label :active %><br>
+    <%= f.select(:active, [["No", 0], ["Yes", 1]]) %>
   </div>
   <div class="field">
-    <%= f.label :BoatName %><br>
-    <%= f.text_field :BoatName %>
+    <%= f.label :boat_name %><br>
+    <%= f.text_field :boat_name %>
   </div>
   <div class="field">
-    <%= f.label :HullType %><br>
-    <%= f.text_field :HullType %>
+    <%= f.label :hull_type %><br>
+    <%= f.text_field :hull_type %>
   </div>
   <div class="field">
     <%= f.label :length %><br>
     <%= f.number_field :length %>
   </div>
   <div class="field">
-    <%= f.label :Hin %><br>
-    <%= f.text_field :Hin %>
+    <%= f.label :hin %><br>
+    <%= f.text_field :hin %>
   </div>
   <div class="field">
     <%= f.label "Start Date" %><br>
-    <%= f.date_select :StartDate %>
+    <%= f.date_select :start_date %>
   </div>
   <div class="field">
     <%= f.label "Completion Date" %><br>
-    <%= f.date_select :CompleteDate %>
+    <%= f.date_select :completion_date %>
   </div>
   <br>
   <div class="actions">

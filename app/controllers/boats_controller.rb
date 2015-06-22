@@ -4,7 +4,7 @@ class BoatsController < ApplicationController
   # GET /boats
   # GET /boats.json
   def index
-    @boats = Boat.all
+    @boats = Boat.order(params[:sort]).all
   end
 
   # GET /boats/1
@@ -69,7 +69,7 @@ class BoatsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def boat_params
-      params.require(:boat).permit(:customer_id, :HullType, :length, :StartDate, :CompleteDate,
-                                    :BoatName, :Hin, :Active)
+      params.require(:boat).permit(:customer_id, :hull_type, :length, :start_date, :completion_date,
+                                    :boat_name, :hin, :active)
     end
 end

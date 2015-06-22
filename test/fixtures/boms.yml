@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_id: 1
+  account_number: MyString
+  account_name: MyString
+  lead_time: 1
+  tech_spec: MyString
+  quantity: 9.99
+  part_number: MyString
+  mfg_number: MyString
+  vendor: MyString
+  unit_price: 9.99
+  po_number: 1
+  date_ordered: 2015-06-21
+  date_recieved: 2015-06-21
+  unit_weight: 9.99
+
+two:
+  customer_id: 1
+  account_number: MyString
+  account_name: MyString
+  lead_time: 1
+  tech_spec: MyString
+  quantity: 9.99
+  part_number: MyString
+  mfg_number: MyString
+  vendor: MyString
+  unit_price: 9.99
+  po_number: 1
+  date_ordered: 2015-06-21
+  date_recieved: 2015-06-21
+  unit_weight: 9.99

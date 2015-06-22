@@ -5,6 +5,7 @@ class SheetsController < ApplicationController
   # GET /sheets.json
   def index
     @sheets = Sheet.all
+    
   end
 
   # GET /sheets/1
